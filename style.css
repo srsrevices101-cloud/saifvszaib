@@ -494,11 +494,11 @@ a {
    8. ANIMATIONS & RESPONSIVENESS
    ========================================= */
 
-/* Fade-in Animation Classes used via JavaScript */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
 }
 
 .fade-in.visible {
