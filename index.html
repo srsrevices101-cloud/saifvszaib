@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saif Ullah & Zaib Noor — Wedding Invitation</title>
-    <meta name="description" content="Join Saif Ullah & Zaib Noor as they celebrate their Mehndi, Barat and Walima.">
+    <title>Saif Ullah & Zaib Noor — Walima Invitation</title>
+    <meta name="description" content="Join Saif Ullah & Zaib Noor as they celebrate their Walima.">
     <meta name="theme-color" content="#050505">
     
     <!-- Open Graph Metadata -->
-    <meta property="og:title" content="Saif Ullah & Zaib Noor | Wedding Invitation">
-    <meta property="og:description" content="Join Saif Ullah & Zaib Noor as they celebrate their Mehndi, Barat and Walima.">
+    <meta property="og:title" content="Saif Ullah & Zaib Noor | Walima Invitation">
+    <meta property="og:description" content="Join Saif Ullah & Zaib Noor as they celebrate their Walima.">
     <meta property="og:type" content="website">
 
     <!-- Google Fonts -->
@@ -122,7 +122,7 @@
             color: var(--primary-bg);
         }
 
-        /* STICKY NAVBAR (NEW) */
+        /* STICKY NAVBAR */
         .navbar {
             position: fixed;
             top: 0;
@@ -149,7 +149,7 @@
             color: var(--bright-gold);
         }
 
-        /* MUSIC PLAYER BUTTON (NEW) */
+        /* MUSIC PLAYER BUTTON */
         .music-btn {
             position: fixed;
             bottom: 30px;
@@ -176,7 +176,7 @@
             color: var(--primary-bg);
         }
 
-        /* FLOATING PARTICLES (NEW) */
+        /* FLOATING PARTICLES */
         #particles {
             position: fixed;
             top: 0;
@@ -209,7 +209,6 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            /* Premium dark texture background */
             background: 
                 radial-gradient(circle at center, rgba(26,26,26,0.8) 0%, var(--primary-bg) 80%),
                 repeating-linear-gradient(45deg, rgba(212,175,55,0.02) 0px, rgba(212,175,55,0.02) 2px, transparent 2px, transparent 10px);
@@ -265,7 +264,7 @@
             color: var(--main-text);
         }
 
-        /* SECTIONS (INTRO, EVENTS) */
+        /* SECTIONS (INTRO) */
         .intro-section {
             background-color: var(--secondary-bg);
             position: relative; z-index: 1;
@@ -282,68 +281,6 @@
             color: var(--secondary-text);
             max-width: 700px;
             margin: 0 auto;
-            font-style: italic;
-            font-family: var(--font-heading);
-        }
-
-        .events-section {
-            background-color: var(--secondary-bg);
-            position: relative; z-index: 1;
-        }
-
-        .events-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-
-        .event-card {
-            background-color: var(--primary-bg);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            padding: 40px 30px;
-            transition: var(--transition-smooth);
-            position: relative;
-        }
-
-        .event-card:hover {
-            border-color: var(--primary-gold);
-            transform: translateY(-5px);
-        }
-
-        /* SVG ICONS FOR EVENTS */
-        .event-icon {
-            margin-bottom: 20px;
-        }
-        .event-icon svg {
-            width: 50px;
-            height: 50px;
-            fill: none;
-            stroke: var(--bright-gold);
-            stroke-width: 1.5;
-        }
-
-        .event-title {
-            font-size: 2.2rem;
-            color: var(--primary-gold);
-        }
-
-        .event-subtitle {
-            font-family: var(--font-text);
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            color: var(--champagne-gold);
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        .event-details {
-            margin-bottom: 20px;
-            color: var(--main-text);
-        }
-
-        .event-desc {
-            color: var(--secondary-text);
-            font-size: 0.95rem;
             font-style: italic;
             font-family: var(--font-heading);
         }
@@ -412,6 +349,18 @@
             color: var(--main-text);
         }
 
+        /* SVG ICONS FOR EVENTS */
+        .event-icon {
+            margin-bottom: 20px;
+        }
+        .event-icon svg {
+            width: 50px;
+            height: 50px;
+            fill: none;
+            stroke: var(--bright-gold);
+            stroke-width: 1.5;
+        }
+
         /* COUNTDOWN SECTION */
         .countdown-section {
             background-color: var(--primary-bg);
@@ -444,7 +393,7 @@
             color: var(--secondary-text);
         }
 
-        /* LOCATION & MAP EMBED (NEW) */
+        /* LOCATION & MAP EMBED */
         .location-section {
             background-color: var(--secondary-bg);
             position: relative; z-index: 1;
@@ -468,7 +417,7 @@
             border: none;
         }
 
-        /* RSVP FORM SECTION (NEW) */
+        /* RSVP FORM SECTION */
         .rsvp-section {
             background-color: var(--primary-bg);
             border-top: 1px solid rgba(212, 175, 55, 0.2);
@@ -545,11 +494,10 @@
 
         /* RESPONSIVE */
         @media screen and (max-width: 768px) {
-            .navbar { display: none; } /* Hide sticky nav on mobile for cleaner look */
+            .navbar { display: none; }
             .music-btn { bottom: 20px; left: 20px; padding: 8px 15px; }
             .couple-names { font-size: 3.5rem; }
             .ampersand { font-size: 2.5rem; }
-            .events-grid { grid-template-columns: 1fr; }
             .info-cards-container { flex-direction: column; }
             .time-number { font-size: 2.2rem; }
             .map-container { height: 250px; }
@@ -568,7 +516,6 @@
     <!-- STICKY NAVBAR -->
     <nav class="navbar">
         <a href="#hero" class="nav-link">Home</a>
-        <a href="#events-overview" class="nav-link">Events</a>
         <a href="#walima" class="nav-link">Walima</a>
         <a href="#location" class="nav-link">Location</a>
         <a href="#rsvp" class="nav-link">RSVP</a>
@@ -583,10 +530,10 @@
                 <span class="ampersand">&</span>
                 <span class="name">Zaib Noor</span>
             </h1>
-            <p class="invite-text">Invite you to celebrate their wedding</p>
+            <p class="invite-text">Invite you to celebrate their Walima</p>
             <div class="gold-divider"></div>
             <p class="hero-date">September 2026</p>
-            <a href="#events-overview" class="btn-primary">Explore Wedding Details &darr;</a>
+            <a href="#walima" class="btn-primary">Explore Walima Details &darr;</a>
         </div>
     </section>
 
@@ -601,44 +548,7 @@
         </div>
     </section>
 
-    <!-- 3. EVENTS OVERVIEW (WITH ICONS) -->
-    <section id="events-overview" class="events-section fade-in">
-        <div class="container events-grid">
-            <!-- Mehndi Card -->
-            <div class="event-card compact-card">
-                <div class="event-icon">
-                    <!-- Leaf/Henna SVG Icon -->
-                    <svg viewBox="0 0 24 24"><path d="M12 22C12 22 20 18 20 12C20 6 12 2 12 2C12 2 4 6 4 12C4 18 12 22 12 22Z" /><path d="M12 22V12" stroke-linecap="round"/></svg>
-                </div>
-                <h2 class="event-title">Mehndi</h2>
-                <h4 class="event-subtitle">A Night of Colors</h4>
-                <div class="event-details">
-                    <p><strong>18 September 2026</strong></p>
-                    <p>7:00 PM</p>
-                    <p>At Home</p>
-                </div>
-                <p class="event-desc">"An evening filled with colors, laughter, music and cherished family moments."</p>
-            </div>
-
-            <!-- Barat Card -->
-            <div class="event-card compact-card">
-                <div class="event-icon">
-                    <!-- Horse/Journey SVG Icon -->
-                    <svg viewBox="0 0 24 24"><path d="M4 14C4 14 6 11 10 11C14 11 18 14 18 14" stroke-linecap="round"/><circle cx="11" cy="6" r="3"/><path d="M20 20L18 14" stroke-linecap="round"/><path d="M4 20L6 14" stroke-linecap="round"/></svg>
-                </div>
-                <h2 class="event-title">Barat</h2>
-                <h4 class="event-subtitle">The Journey Begins</h4>
-                <div class="event-details">
-                    <p><strong>19 September 2026</strong></p>
-                    <p>Saturday</p>
-                    <p>8:00 AM</p>
-                </div>
-                <p class="event-desc">"The Barat will depart in the morning as we continue this beautiful journey."</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. WALIMA SECTION (WITH ADD TO CALENDAR) -->
+    <!-- 3. WALIMA SECTION (WITH ADD TO CALENDAR) -->
     <section id="walima" class="walima-section fade-in">
         <div class="container">
             <div class="event-icon">
@@ -660,7 +570,7 @@
         </div>
     </section>
 
-    <!-- 5. COUNTDOWN TIMER -->
+    <!-- 4. COUNTDOWN TIMER -->
     <section id="countdown-section" class="countdown-section fade-in">
         <div class="container">
             <h3 class="countdown-title">Awaiting the Special Day</h3>
@@ -673,7 +583,7 @@
         </div>
     </section>
 
-    <!-- 6. LOCATION & GOOGLE MAP EMBED -->
+    <!-- 5. LOCATION & GOOGLE MAP EMBED -->
     <section id="location" class="location-section fade-in">
         <div class="container">
             <h2 class="section-title">Join Us at the Walima</h2>
@@ -686,13 +596,13 @@
         </div>
     </section>
 
-    <!-- 7. RSVP FORM -->
+    <!-- 6. RSVP FORM -->
     <section id="rsvp" class="rsvp-section fade-in">
         <div class="container">
             <h2 class="section-title">RSVP</h2>
             <p class="intro-text" style="margin-bottom: 30px;">Please let us know if you will be joining us.</p>
             
-            <!-- FORMSPREE ACTION LINK (Replace with yours) -->
+            <!-- FORMSPREE ACTION LINK -->
             <form class="rsvp-form" action="https://formspree.io/f/mqpzggby" method="POST">
                 <div class="form-group">
                     <label>Full Name</label>
@@ -712,7 +622,7 @@
         </div>
     </section>
 
-    <!-- 8. CLOSING SECTION -->
+    <!-- 7. CLOSING SECTION -->
     <section id="closing" class="closing-section fade-in">
         <div class="container">
             <div class="small-divider"></div>
