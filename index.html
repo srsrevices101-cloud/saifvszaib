@@ -400,8 +400,9 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             color: var(--bright-gold);
-            animation: shimmer-text 5s linear infinite;
             filter: drop-shadow(0 0 18px rgba(245, 215, 110, 0.15));
+            opacity: 0;
+            animation: name-reveal 1s ease 0.3s forwards, shimmer-text 5s linear 1.3s infinite;
         }
 
         @keyframes shimmer-text {
@@ -409,14 +410,8 @@
             100% { background-position: -250% center; }
         }
 
-        .couple-names .letter {
-            display: inline-block;
-            opacity: 0;
-            transform: translateY(15px);
-            animation: letter-reveal 0.6s ease forwards;
-        }
-
-        @keyframes letter-reveal {
+        @keyframes name-reveal {
+            from { opacity: 0; transform: translateY(15px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
@@ -742,7 +737,7 @@
     <!-- SUBTLE BACKGROUND PATTERN (parallax) -->
     <div id="bg-pattern"></div>
 
-    <!-- PRE-LOADER (0.3 Seconds Time + Custom Image) -->
+    <!-- PRE-LOADER (1.2 Seconds Time + Custom Image) -->
 <div id="preloader">
     <div class="loader-bismillah">﷽</div>
     <!-- USER'S CUSTOM RING IMAGE -->
@@ -952,20 +947,6 @@
                 setRing('ring-seconds', seconds / 60);
             }
         }, 1000);
-
-        // --- 1B. LETTER-BY-LETTER REVEAL FOR COUPLE NAMES ---
-        const heroNameEl = document.getElementById('couple-names-hero');
-        if (heroNameEl) {
-            const originalText = heroNameEl.textContent;
-            heroNameEl.textContent = '';
-            [...originalText].forEach((ch, i) => {
-                const span = document.createElement('span');
-                span.className = 'letter';
-                span.style.animationDelay = (0.3 + i * 0.05) + 's';
-                span.textContent = ch === ' ' ? '\u00A0' : ch;
-                heroNameEl.appendChild(span);
-            });
-        }
 
         // --- 1C. SUBTLE PARALLAX ON SCROLL (background pattern) ---
         const bgPattern = document.getElementById('bg-pattern');
