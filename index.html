@@ -472,6 +472,51 @@
             font-family: var(--font-text);
         }
 
+        /* WEDDING DUA BLOCK */
+        .dua-block {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 30px 25px;
+            border-top: 1px solid rgba(212, 175, 55, 0.25);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+        }
+
+        .dua-arabic {
+            font-family: var(--font-arabic);
+            font-size: 2rem;
+            color: var(--bright-gold);
+            line-height: 2;
+            direction: rtl;
+            margin-bottom: 18px;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .dua-urdu {
+            font-family: var(--font-arabic);
+            font-size: 1.2rem;
+            color: var(--champagne-gold);
+            direction: rtl;
+            line-height: 1.9;
+            margin-bottom: 14px;
+        }
+
+        .dua-english {
+            font-family: var(--font-heading);
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--secondary-text);
+            line-height: 1.7;
+        }
+
+        .dua-reference {
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: var(--primary-gold);
+            text-transform: uppercase;
+            margin-top: 12px;
+            opacity: 0.8;
+        }
+
         /* FAMILY NAMES SECTION (Guest of Honour / Elders list) */
         .family-names-section {
             background-color: var(--secondary-bg);
@@ -823,15 +868,22 @@
     <!-- 2. INVITATION & FAMILY SECTION -->
     <section id="invitation" class="intro-section fade-in">
         <div class="container">
-            <h2 class="section-title">Walima Reception</h2>
+            <h2 class="section-title">Mandhi & Walima Celebrations</h2>
             <div class="pattern-divider">
                 <span class="line"></span>
                 <svg viewBox="0 0 28 28"><polygon points="14,2 26,14 14,26 2,14"/><circle cx="14" cy="14" r="5"/></svg>
                 <span class="line right"></span>
             </div>
             <p class="intro-text">
-                "Together with their families, Mr. & Mrs. Saif request the pleasure of your presence at their Walima Reception. Your presence and blessings will make this occasion even more special for us."
+                "Together with their families, Mr. & Mrs. Saif request the pleasure of your presence at their Mandhi and Walima celebrations. Your presence and blessings will make this occasion even more special for us."
             </p>
+
+            <div class="dua-block">
+                <p class="dua-arabic">بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+                <p class="dua-urdu">اللہ تعالیٰ آپ کو برکت عطا فرمائے، آپ پر اپنی برکتیں نازل فرمائے اور آپ دونوں کو خیر و بھلائی کے ساتھ اکٹھا رکھے۔</p>
+                <p class="dua-english">"May Allah bless you, shower His blessings upon you, and join you both together in goodness."</p>
+                <p class="dua-reference">— Sunan al-Tirmidhi</p>
+            </div>
 
             <div class="family-details">
                 <div class="family-member">
